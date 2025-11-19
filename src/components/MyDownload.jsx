@@ -6,7 +6,6 @@ import {
   FaTag,
   FaTrashAlt,
 } from "react-icons/fa";
-import { Link } from "react-router";
 import Swal from "sweetalert2";
 import useAxiosSecure from "../hooks/useAxiosSecure";
 
@@ -78,11 +77,11 @@ const MyDownload = ({ model, models, setModels }) => {
 
       <div className="p-4 text-white flex flex-col justify-between">
         <div>
-          <Link to={`/modelDetails/${_id}`}>
-            <h2 className="text-lg font-semibold truncate hover:text-pink-300 transition">
+          
+            <h2 className="text-lg font-semibold truncate  transition">
               {name}
             </h2>
-          </Link>
+          
           <p className="text-xs text-indigo-200 italic flex items-center gap-1 mt-1">
             <FaTag className="text-indigo-300" />
             {category}
@@ -105,13 +104,7 @@ const MyDownload = ({ model, models, setModels }) => {
             </div>
           </div>
 
-          <Link
-            to={`/modelDetails/${_id}`}
-            className="w-full flex items-center justify-center gap-1 bg-white/15 hover:bg-white/25 backdrop-blur-sm text-white text-xs py-1.5 rounded-lg transition"
-          >
-            {/* <FaDownload className="text-cyan-200" /> */}
-            <span>View</span>
-          </Link>
+          
         </div>
       </div>
     </div>

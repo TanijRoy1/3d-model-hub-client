@@ -61,6 +61,7 @@ const router = createBrowserRouter([
                 Component: Register
             }
         ]
-    }
+    },
+    
 ])
 export default router;
